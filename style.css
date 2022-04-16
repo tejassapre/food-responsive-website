@@ -1,0 +1,242 @@
+/* :root{
+              --navbar-height:56px;
+          } */
+* {
+  margin: 9px;
+  padding: 0px;
+}
+#navbar {
+  display: flex;
+}
+#logo img {
+  width: 80px;
+  height: 80px;
+  padding: 0px;
+}
+#navbar ul {
+  display: flex;
+  font-family: "Times New Roman", Times, serif;
+  position: sticky;
+}
+#navbar ul li {
+  display: flex;
+  list-style: none;
+  font-size: 1.3rem;
+}
+#navbar ul li a {
+  color: rgb(246, 246, 250);
+  display: block;
+  padding: 10px 1px;
+  /* margin: 1px 2px; */
+  border-radius: 20px;
+  text-decoration: none;
+}
+#navbar ul li a:hover {
+  background-color: transparent;
+  color: rgb(183, 161, 161);
+  border: 2px solid gray;
+  font-size: large;
+}
+
+#navbar::before {
+  content: "";
+  position: absolute;
+  height: 0%;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  opacity: 0.3;
+  background-color: black;
+}
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: 3px 200px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#home h1 {
+  transition: all 0.5s ease-in-out;
+}
+#home h1:hover {
+  color: rgb(14, 13, 12);
+  transform: rotate(360deg);
+}
+#home::before {
+  content: "";
+  position: absolute;
+  height: 750px;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  background: url("https://images6.alphacoders.com/738/thumb-1920-738359.jpg")
+    repeat center center / cover;
+  z-index: -1;
+  opacity: 8;
+  margin: 10px 40px;
+}
+#home h1 {
+  color: rgb(18, 17, 17);
+  text-align: center;
+  font-size: 3rem;
+}
+#home p {
+  color: rgb(18, 20, 19);
+  text-align: center;
+  font-size: 1rem;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.btn {
+  background-color: rgb(7, 92, 32);
+  color: white;
+  border: 2px solid white;
+  padding: 3px 22px;
+  margin: 10px 4px;
+  cursor: pointer;
+  height: 60px;
+  width: 100px;
+  transition: all 0.5s ease-in-out;
+}
+.btn:hover {
+  background-color: rgb(3, 96, 3);
+  color: black;
+  transform: scale(1.1);
+}
+.imge {
+  height: 100px;
+  width: 14%;
+  transition: all 0.5s ease-in-out;
+  margin: -50px 23px;
+  padding: 17px 0px;
+}
+.imge:hover {
+  transform: scale(1.5);
+}
+#services {
+  display: flex;
+  margin: 30px;
+}
+#services.box {
+  border: 2px solid red;
+}
+.second {
+  color: white;
+}
+#service > p {
+  border: 2px solid red;
+  height: 90px;
+  width: 100%;
+  margin: auto;
+}
+
+.listc {
+  display: flex;
+  margin: 100px;
+  list-style: none;
+}
+
+.container {
+  display: flex;
+  border: 2px solid red;
+  height: 100%;
+  width: 70%;
+  padding: 2px 40px;
+  margin: 92px 170px;
+  flex-direction: column;
+  background-color: rgb(218, 214, 214);
+  border-radius: 10px;
+  box-shadow: -14px 22px 34px;
+  transition: all 0.4s ease-in-out;
+}
+.container:hover {
+  transform: scale(1.1);
+}
+.container img {
+  display: block;
+  height: 150px;
+  width: 254px;
+  margin: auto;
+}
+.container h1 {
+  text-align: center;
+}
+#client-section {
+  height: 284px;
+}
+#client-section::before {
+  content: "";
+  position: absolute;
+  height: 35%;
+  width: 100%;
+  background: url("./logo.jpg") center center / cover;
+  z-index: -1;
+  opacity: 0.4;
+}
+#client-section h1 {
+  text-align: center;
+  margin: 40px 50px;
+}
+#client-section img {
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+}
+#clients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 22px;
+}
+#client-item {
+  padding: 34px;
+}
+footer {
+  background-color: black;
+  color: white;
+}
+#contactsection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 34px;
+}
+#contactsection::before {
+  content: "";
+  position: absolute;
+  height: 35%;
+  width: 100%;
+  background: url("./fooodweb.jpeg") repeat center center / cover;
+  z-index: -1;
+  opacity: 0.5;
+}
+#contactsection h1 {
+  text-align: center;
+}
+#ourservices {
+  display: block;
+  width: 60px;
+  margin: auto;
+  padding: 40px 34px;
+  font-size: larger;
+  margin-top: 3px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+.contime {
+  background: rgb(184, 181, 181);
+  color: rgb(17, 18, 17);
+  border-radius: 7px;
+  padding: 10px 12px;
+  text-align: center;
+  font-weight: 700;
+}
+#time {
+  font-weight: 700;
+}
