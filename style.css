@@ -4,6 +4,11 @@
 * {
   margin: 9px;
   padding: 0px;
+  margin-right: 0px;
+  margin-right: 0px;
+}
+body{
+  background-color: rgb(62, 61, 61);
 }
 #navbar {
   display: flex;
@@ -101,11 +106,13 @@
   height: 60px;
   width: 100px;
   transition: all 0.5s ease-in-out;
+   border-radius: 10px; 
 }
 .btn:hover {
   background-color: rgb(3, 96, 3);
   color: black;
   transform: scale(1.1);
+  border-radius: 10px;
 }
 .imge {
   height: 100px;
