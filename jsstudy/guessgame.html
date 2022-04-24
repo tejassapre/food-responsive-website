@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1> NUMBER Guessing Game</h1>
+<h3>FRom 1-20</h3>
+<label >enter guess</label>
+    <input type="guessfield">
+    <input type="submit" id="submitbutton">
+    <script>
+        const answer=Math.floor(Math.random()*20+1);
+        let guesses=0;
+
+        document.getElementById("submitbutton").onclick=function(){
+
+let guess= document.getElementById("guessfield").value ;     
+guesses+=1;
+
+if(guess==answer){
+    alert(`${guess} is the correct it takes ${guesses}  `);
+}
+else if(guess<answer){
+    alert("too short no.");
+}
+ else{
+     alert("too large no.");
+}
+  }
+
+    </script>
+</body>
+</html>
