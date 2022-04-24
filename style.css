@@ -10,6 +10,21 @@
 body{
   background-color: rgb(62, 61, 61);
 }
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f0e0e; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: rgb(224, 236, 12); 
+}                                                                       
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(22, 22, 22); 
+}
 #navbar {
   display: flex;
 }
