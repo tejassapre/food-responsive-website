@@ -23,7 +23,7 @@ body{
 }                                                                       
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgb(22, 22, 22); 
+  background: rgb(211, 9, 9); 
 }
 #navbar {
   display: flex;
