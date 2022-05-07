@@ -1,33 +1,57 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(15, 115, 118);
+            color: rgb(201, 251, 253);
+       
+        }
+    </style>
+</head>
 <body>
     <form>
-    <head><title>payment form</title></head>
-<h1>Payment Form</h1>
-<h2>information</h2>
-<p>Name:<input type="text"  name="name" id="name" required</p>
-<fieldset>
-    <legend>Gender</legend>
-<P>
-    male<input type="radio" name="gender" id="male" > Female<input type="radio" name="gender" id="female" >
-</P>
-</fieldset>
-<p>Address:<textarea  name="address" cols="80" rows="6"></textarea></p>
-<p>Email:<input type="email" name="" id="email"</p>
-<p>Pincode: <input type="number" name="pincode"" id="code"</p>
-<h1>Payment information</h1>
-<p>card type:
-    <select name="cards type" id="cards">
-        <option value="">--select card type--</option>
-        <option value="visa">visa</option>
-        <option value="mastercard">master</option>
-        <option value="rupay">rupay</option>
-    </select>
-</p>
-<p> exp date: <input type="date" name="date" id="date"</p>
-<p>Card number: <input type="number" name="cardnum" id="cardnum" required</p>
-<p>CVV :<input type="password" name="cvv" id="cvv"</p>
-<P><input type="submit" value="Pay">
-</P>
-</form>
+        <head><title>payment form</title></head>
+    <h1>Payment Form</h1>
+    <h2>information</h2>
+    <p>Name:<input type="text"  name="name" id="name" required</p>
+    <fieldset>
+        <legend>Gender</legend>
+    <P>
+        male<input type="radio" name="gender" id="male" > Female<input type="radio" name="gender" id="female" >
+    </P>
+    </fieldset>
+    <p>Address:<textarea  name="address" cols="80" rows="6"></textarea></p>
+    <p>Email:<input type="email" name="" id="email"</p>
+    <p>Pincode: <input type="number" name="pincode"" id="code"</p>
+    <p>Menu:
+        <select name="food type" id="foods">
+            <option value="">--select item--</option>
+            <option value="Veg">Veg</option>
+            <option value="Non-veg">Non-veg</option>
+            <option value="Drinks">Drinks</option>
+            <option value="Our Special">Our Special</option>
+
+        </select>
+    </p>
+    <h1>Payment information</h1>
+    <p>card type:
+        <select name="cards type" id="cards">
+            <option value="">--select card type--</option>
+            <option value="visa">visa</option>
+            <option value="mastercard">master</option>
+            <option value="rupay">rupay</option>
+        </select>
+    </p>
+    <p> exp date: <input type="date" name="date" id="date"</p>
+    <p>Card number: <input type="number" name="cardnum" id="cardnum" required</p>
+    <p>CVV :<input type="password" name="cvv" id="cvv"</p>
+    <P><input type="submit" value="Pay">
+    </P>
+    </form>
 </body>
 </html>
