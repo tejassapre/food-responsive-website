@@ -107,7 +107,7 @@ body{
 #home p {
   color: rgb(18, 20, 19);
   text-align: center;
-  font-size: 15px;
+  font-size: 21px;
   text-align: center;
   font-weight: bolder;
 }
@@ -188,6 +188,11 @@ body{
 .container h1 {
   text-align: center;
 }
+.container p{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
 #client-section {
   height: 284px;
 }
@@ -227,6 +232,7 @@ footer {
   justify-content: center;
   align-items: center;
   padding-bottom: 34px;
+  font-weight: bold;
 }
 #contactsection::before {
   content: "";
